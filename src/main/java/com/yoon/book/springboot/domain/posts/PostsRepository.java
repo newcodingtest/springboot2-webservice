@@ -1,4 +1,4 @@
-package com.yoon.book.springboot.dto.posts;
+package com.yoon.book.springboot.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

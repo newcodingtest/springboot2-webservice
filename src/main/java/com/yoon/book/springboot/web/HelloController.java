@@ -1,6 +1,6 @@
-package com.yoon.book.springboot;
+package com.yoon.book.springboot.web;
 
-import com.yoon.book.springboot.dto.HelloResponseDto;
+import com.yoon.book.springboot.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

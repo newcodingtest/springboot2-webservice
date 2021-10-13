@@ -25,20 +25,27 @@ repositories {
     jcenter()
 }
 
+test {
+    useJUnitPlatform()
+}
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+}
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok')
-    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')  //jpa 추상 라이브러리
     compile('org.springframework.boot:spring-boot-starter-mustache')
-    compile('com.h2database:h2')
+    compile('com.h2database:h2') //인메모리 형 테스트 관계형 데이터베이스
     annotationProcessor('org.projectlombok:lombok') // 추가
 
-    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+    /*compile('org.springframework.boot:spring-boot-starter-oauth2-client')*/
     compile('org.springframework.session:spring-session-jdbc')
 
     compile("org.mariadb.jdbc:mariadb-java-client")
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
-    testCompile("org.springframework.security:spring-security-test")
+    /*testCompile("org.springframework.security:spring-security-test")*/
 }
 
