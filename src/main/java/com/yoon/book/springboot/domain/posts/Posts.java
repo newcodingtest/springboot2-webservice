@@ -1,6 +1,7 @@
 package com.yoon.book.springboot.domain.posts;
 
 
+import com.yoon.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor // 기본생성자 자동추가
 @Entity//JPA의 어노테이션 테이블과 링크될 클래스임을 나타낸다.
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id// 해당 테이블의 PK필드를 나타냅니다.
     @GeneratedValue(strategy = GenerationType.IDENTITY)//PK의 생성규칙-GenerationType.IDENTITY 을 추가해야만 Auto_increment가 된다.
