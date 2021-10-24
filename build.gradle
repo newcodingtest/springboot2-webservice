@@ -32,6 +32,11 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 }
+
+dependencies { compile 'org.springframework.security:spring-security-web:4.2.2.RELEASE'
+    compile 'org.springframework.security:spring-security-config:4.2.2.RELEASE' }
+
+
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok')
@@ -44,6 +49,8 @@ dependencies {
     compile('org.springframework.session:spring-session-jdbc')
 
     compile("org.mariadb.jdbc:mariadb-java-client")
+
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
     /*testCompile("org.springframework.security:spring-security-test")*/
