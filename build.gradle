@@ -33,8 +33,6 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 }
 
-dependencies { compile 'org.springframework.security:spring-security-web:4.2.2.RELEASE'
-    compile 'org.springframework.security:spring-security-config:4.2.2.RELEASE' }
 
 
 dependencies {
