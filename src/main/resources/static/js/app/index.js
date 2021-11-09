@@ -50,7 +50,7 @@ var main = {
             }).fail(function(error){
                 alert(JSON.stringify(error));
             });
-        }
+        },
 
         delete : function(){
             var id = $('#id').val();
