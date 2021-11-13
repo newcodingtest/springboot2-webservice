@@ -1,4 +1,4 @@
-package com.yoon.book.springboot.config;
+package com.yoon.book.springboot.config.auth;
 
 import com.yoon.book.springboot.config.auth.CustomOAuth2UserService;
 import com.yoon.book.springboot.domain.user.Role;

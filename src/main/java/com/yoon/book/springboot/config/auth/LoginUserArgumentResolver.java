@@ -1,4 +1,4 @@
-package com.yoon.book.springboot.config;
+package com.yoon.book.springboot.config.auth;
 
 import com.yoon.book.springboot.config.auth.dto.SessionUser;
 import lombok.RequiredArgsConstructor;

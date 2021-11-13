@@ -1,4 +1,4 @@
-package com.yoon.book.springboot.config;
+package com.yoon.book.springboot.config.auth;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
